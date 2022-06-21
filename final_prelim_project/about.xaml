@@ -1,0 +1,25 @@
+﻿<Window x:Class="final_prelim_project.about"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:final_prelim_project"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="about" Height="450" Width="600">
+    <Window.Background>
+        <ImageBrush ImageSource="images (2).jpg"/>
+    </Window.Background>
+    <Grid>
+        <Image Source="received_2478364612483006.jpeg" Stretch="Fill" Margin="211,20,153.6,262"/>
+
+        <Button Content="Exit" HorizontalAlignment="Left" Height="36" Margin="493,379,0,0" VerticalAlignment="Top" Width="97" Background="{x:Null}" FontWeight="Bold" FontStyle="Italic" Click="back3button" FontSize="28">
+            <Button.Foreground>
+                <ImageBrush ImageSource="images (1).jpg"/>
+            </Button.Foreground>
+        </Button>
+        <Image HorizontalAlignment="Left" Stretch="Fill" Height="154" Margin="200,149,0,0" VerticalAlignment="Top" Width="233" Source="images.png"/>
+        <Image HorizontalAlignment="Left" Height="167" Margin="31,233,0,0" VerticalAlignment="Top" Width="252" Source="3123.png"/>
+        <Image HorizontalAlignment="Left" Height="162" Margin="363,259,0,-1" VerticalAlignment="Top" Width="151" Source="images12.png"/>
+    </Grid>
+</Window>

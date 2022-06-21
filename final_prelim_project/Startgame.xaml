@@ -1,0 +1,45 @@
+﻿<Window x:Class="final_prelim_project.Startgame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:final_prelim_project"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Startgame" Height="624.2" Width="688.2">
+    <Window.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="BorderBrush" Value="Gray"/>
+                <Setter Property="FontSize" Value="40"/>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Window.Background>
+        <ImageBrush ImageSource="images.jpg"/>
+    </Window.Background>
+    <Grid Margin="0,0,1.6,-4.6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="24*"/>
+        </Grid.RowDefinitions>
+        <Button Click="Index00Button_Click" x:Name="_index00Button" HorizontalAlignment="Left" Margin="40,45,0,0" VerticalAlignment="Top" Width="147" Height="119"/>
+        <Button Click="Index10Button_Click" x:Name="_index10Button" HorizontalAlignment="Left" Margin="187,45,0,0" VerticalAlignment="Top" Width="148" Height="119"/>
+        <Button Click="Index20Button_Click" x:Name="_index20Button" HorizontalAlignment="Left" Margin="335,45,0,0" VerticalAlignment="Top" Width="147" Height="119"/>
+        <Button Click="Index01Button_Click" x:Name="_index01Button" HorizontalAlignment="Left" Margin="40,164,0,0" VerticalAlignment="Top" Width="147" Height="119"/>
+        <Button Click="Index11Button_Click" x:Name="_index11Button" HorizontalAlignment="Left" Margin="187,164,0,0" VerticalAlignment="Top" Width="148" Height="119"/>
+        <Button Click="Index21Button_Click" x:Name="_index21Button" HorizontalAlignment="Left" Margin="335,164,0,0" VerticalAlignment="Top" Width="147" Height="119"/>
+        <Button Click="Index02Button_Click" x:Name="_index02Button" HorizontalAlignment="Left" Margin="40,283,0,0" VerticalAlignment="Top" Width="147" Height="118"/>
+        <Button Click="Index12Button_Click" x:Name="_index12Button" HorizontalAlignment="Left" Margin="187,283,0,0" VerticalAlignment="Top" Width="148" Height="118"/>
+        <Button Click="Index22Button_Click" x:Name="_index22Button" HorizontalAlignment="Left" Margin="335,283,0,0" VerticalAlignment="Top" Width="147" Height="118"/>
+
+        <TextBlock x:Name="scoreA" HorizontalAlignment="Left" Margin="124,31,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="85" Width="50" FontFamily="Rockwell Extra Bold" Foreground="Black" ForceCursor="True" FontSize="72" Grid.Row="1"/>
+        <TextBlock x:Name="scoreB" HorizontalAlignment="Left" Margin="352,28,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="85" Width="50" Foreground="Black" FontSize="72" FontFamily="Rockwell Extra Bold" Grid.Row="1"/>
+        <TextBlock x:Name="roundstry" HorizontalAlignment="Left" Margin="570,243,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Height="50" Width="39" Foreground="Black" FontSize="48" FontFamily="Stencil"/>
+        <TextBlock x:Name="player1textblock" HorizontalAlignment="Left" Margin="51,436,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="45" Width="221" Foreground="Black" FontFamily="Rockwell Extra Bold" FontSize="36" Grid.RowSpan="2"/>
+        <TextBlock x:Name="player2textblock" HorizontalAlignment="Left" Margin="299,436,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="45" Width="226" Foreground="Black" FontFamily="Rockwell Extra Bold" FontSize="36" Grid.RowSpan="2"/>
+        <Label Content="ROUND: " HorizontalAlignment="Left" Margin="494,181,-1,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="36" Foreground="Black" Width="187" Height="56"/>
+        <Button Click="back_mainclick" HorizontalAlignment="Left" Margin="477,60,0,0" VerticalAlignment="Top" Width="192" Height="76" Background="{x:Null}" Content="Exit Game" FontWeight="Bold" FontStyle="Italic" Foreground="Black" Grid.Row="1"/>
+    </Grid>
+</Window>

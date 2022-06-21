@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29621BE6-9A20-4510-AE6D-8F78A29DD79A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>final_prelim_project</RootNamespace>
+    <AssemblyName>final_prelim_project</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="about.xaml.cs">
+      <DependentUpon>about.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="help.xaml.cs">
+      <DependentUpon>help.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="help1window.xaml.cs">
+      <DependentUpon>help1window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="help2window.xaml.cs">
+      <DependentUpon>help2window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="helptrue.xaml.cs">
+      <DependentUpon>helptrue.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="name.xaml.cs">
+      <DependentUpon>name.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Startgame.xaml.cs">
+      <DependentUpon>Startgame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="winner.xaml.cs">
+      <DependentUpon>winner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="winner1.xaml.cs">
+      <DependentUpon>winner1.xaml</DependentUpon>
+    </Compile>
+    <Page Include="about.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="help1window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="help2window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="helptrue.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="name.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Startgame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="winner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="winner1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\backg_title.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\darthvader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Outer-Space-Wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\riser.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\startgame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\play1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\play2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\plays.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ivans&amp;alawi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\chew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\fet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\han.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\maul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\vader.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\yoda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\reykylo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\greater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\gamestart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\picmenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\homebut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\wins.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\selection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\start1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\start2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\start3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cat.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\cheetah.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\dog.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\monkey.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\owl.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\tiger.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\elephant.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\mountain.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\tictactoe1.png" />
+    <Resource Include="Resources\Tic_Tac_Toe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\aboutpic.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\city.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\lake.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\moonlight.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\asdasd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\pexels-photo-401107.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="received_2478364612483006.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="3123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="prep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1d018d32dcf81371fccb76c17b2044d4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="40-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="a93ae072d2ddaee0dbf4bc327c72810f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bunnies-clipart-face-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="clipart-elephant-face-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ebbccaf76f41f7d83e45a42974cfcd87-dog-illustration-by-vexels.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

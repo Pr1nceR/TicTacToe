@@ -1,0 +1,16 @@
+﻿<Window x:Class="final_prelim_project.winner1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:final_prelim_project"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="winner1" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="images (2).jpg"/>
+        </Grid.Background>
+        <TextBlock x:Name="playerwinnerTextblock2"  HorizontalAlignment="Left" Margin="197,52,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="423" Height="104" FontSize="72" FontFamily="Stencil" Foreground="Black"/>
+    </Grid>
+</Window>

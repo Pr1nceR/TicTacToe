@@ -1,0 +1,16 @@
+﻿<Window x:Class="final_prelim_project.help2window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:final_prelim_project"
+        mc:Ignorable="d"
+        Title="help2window" Height="460.607" Width="604.546">
+    <Grid Margin="0,0,102.6,-3">
+        <Image Source="images (2).jpg" Stretch="Fill" Height="434" VerticalAlignment="Top" Margin="0,0,-102.2,0"/>
+        <Label x:Name="label" Content="Tips on how to win the Game" HorizontalAlignment="Left" Height="44" Margin="123,23,0,0" VerticalAlignment="Top" Width="289" FontWeight="Bold" FontSize="20" Foreground="Black"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="338" Margin="10,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" Foreground="Black" FontSize="22"><Run Text="Play your first &quot;bet&quot; in a corner."/><LineBreak/><Run/><LineBreak/><Run Text="Most experienced tic tac toe players put the first &quot;bet&quot; in a corner when they get to play first. This gives the opponent the most opportunities to make a mistake. If your opponent responds by putting an O anywhere besides the center, you can guarantee a win."/></TextBlock>
+        <Button Content="Exit" HorizontalAlignment="Left" Height="29" Margin="485,394,-94.2,0" VerticalAlignment="Top" Width="105" Click="Exit" Background="{x:Null}" Foreground="Black" FontSize="20" FontWeight="Bold" FontStyle="Italic"/>
+        <Button Content="Back" HorizontalAlignment="Left" Height="29" Margin="0,399,0,0" VerticalAlignment="Top" Width="105" Click="Back1" Background="{x:Null}" Foreground="Black" FontSize="20" FontWeight="Bold" FontStyle="Italic"/>
+    </Grid>
+</Window>
